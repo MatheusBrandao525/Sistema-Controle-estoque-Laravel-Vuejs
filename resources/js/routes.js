@@ -1,15 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router';
-
-// Importe os componentes que serão usados nas rotas
-import Dashboard from './components/Dashboard.vue'; // Importe o componente do dashboard
-import Products from './components/Products.vue';   // Importe outros componentes
-import ProductDetails from './components/ProductDetails.vue';
+import Home from './components/Home.vue'; // Crie esse componente
+import Products from './components/Products.vue'; // Crie esse componente
 
 const routes = [
-  { path: '/dashboard', component: Dashboard },
-  { path: '/products', component: Products },
-  { path: '/products/:id', component: ProductDetails, name: 'product-details' },
-  // Defina mais rotas conforme necessário
+  { path: '/', component: Home },
+  { path: '/produtos', component: Products },
 ];
 
 const router = createRouter({

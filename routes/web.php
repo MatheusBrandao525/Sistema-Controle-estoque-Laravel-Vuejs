@@ -18,9 +18,22 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/products', function () {
-    return view('products');
+Route::get('/clientes', function () {
+    return view('clientes');
 });
+
+Route::get('/despesas', function () {
+    return view('despesas');
+});
+
+Route::get('/produtos', function () {
+    return view('produtos');
+});
+
+Route::get('/vendas', function () {
+    return view('vendas');
+});
+
 /*
 Route::get('/dashboard', function () {
     return view('dashboard');

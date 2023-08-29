@@ -1,13 +1,45 @@
-<script setup>
-    import {ref} from 'vue';
+<template>
+  <div style="display: flex">
+    <menu-lateral></menu-lateral>
+    <div class="produtos-view">
+      <h2>Produtos</h2>
+      <button @click="showProductForm = true">Cadastrar Produto</button>
 
-    const name = ref('');
+      <product-form v-if="showProductForm"></product-form>
+      <div v-for="(product, index) in $store.state.products" :key="index">
+        {{ product.nome }} - {{ product.quantidade }} - {{ product.valor }}
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+import MenuLateral from "../components/MenuLateral.vue";
+import ProductForm from "../components/ProductForm.vue";
+
+export default {
+  components: {
+    "menu-lateral": MenuLateral,
+    "product-form": ProductForm,
+  },
+  data() {
+    return {
+      showProductForm: false,
+    };
+  },
+};
 </script>
 
-<template>
+<style>
+.produtos-view {
+  width: 80%;
+  padding: 2rem;
 
-    {{ name }}
 
-
-    <input type="text" v-model="name">
-</template>
+}
+h2{
+    font-size: 4rem;
+    font-weight: bold;
+    color: darkgray;
+  }
+</style>

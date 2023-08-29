@@ -1,5 +1,8 @@
 @extends('master')
 
 @section('content')
-    <MenuLateral />
+<div class="container" style="display:flex;">
+  <menulateral></menulateral>
+  <welcome-view></welcome-view>
+</div>
 @endsection

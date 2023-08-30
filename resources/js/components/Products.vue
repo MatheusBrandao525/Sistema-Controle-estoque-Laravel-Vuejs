@@ -3,7 +3,9 @@
     <menu-lateral></menu-lateral>
     <div class="produtos-view">
       <h2>Produtos</h2>
-      <button @click="showProductForm = true">Cadastrar Produto</button>
+      <button @click="showProductForm = true">
+        <span class="material-symbols-outlined"> add </span>
+      </button>
 
       <product-form v-if="showProductForm"></product-form>
       <div v-for="(product, index) in $store.state.products" :key="index">
@@ -34,12 +36,10 @@ export default {
 .produtos-view {
   width: 80%;
   padding: 2rem;
-
-
 }
-h2{
-    font-size: 4rem;
-    font-weight: bold;
-    color: darkgray;
-  }
+h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: darkgray;
+}
 </style>

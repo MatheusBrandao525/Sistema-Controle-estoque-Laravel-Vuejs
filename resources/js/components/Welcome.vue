@@ -1,6 +1,8 @@
 <template>
     <div class="welcome">
         <h2 class="nome-sistema">Sistema de Gerenciamento de Estoque</h2>
+
+
     </div>
 </template>
 

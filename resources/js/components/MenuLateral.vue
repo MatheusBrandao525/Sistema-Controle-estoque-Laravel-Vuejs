@@ -16,7 +16,7 @@
         <span class="material-symbols-outlined"> home </span>
         <span class="text">Home</span>
       </a>
-      <a href="/about" class="button">
+      <a href="/clientes" class="button">
         <span class="material-symbols-outlined"> group </span>
         <span class="text">Clientes</span>
       </a>
@@ -24,7 +24,7 @@
         <span class="material-symbols-outlined"> store </span>
         <span class="text">Produtos</span>
       </a>
-      <a href="/contact" class="button">
+      <a href="/vendas" class="button">
         <span class="material-symbols-outlined"> sell </span>
         <span class="text">Vendas</span>
       </a>

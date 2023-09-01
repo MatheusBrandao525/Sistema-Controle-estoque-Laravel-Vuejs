@@ -22,8 +22,8 @@ Route::get('/clientes', function () {
     return view('clientes');
 });
 
-Route::get('/despesas', function () {
-    return view('despesas');
+Route::get('/financeiro', function () {
+    return view('financeiro');
 });
 
 Route::get('/produtos', function () {
